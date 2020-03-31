@@ -1,0 +1,29 @@
+# Main navigation menu
+
+main:
+    - title: "Home"
+      url: /
+    - title: "Posts"
+      url: /posts/
+    # - title: "Projects"
+    #   url: /projects/
+    # - title: "Games"
+    #   url: /games/
+    # - title: "About me"
+    #   url: /about-me/
+
+# Posts navigation
+
+laravel-with-docker-without-third-party-packages:
+  - title: Getting Started
+    children:
+      - title: "Introduction"
+        url: /laravel-with-docker-without-third-party-packages#introduction
+      - title: "Requirements"
+        url: /laravel-with-docker-without-third-party-packages#requirements
+  - title: Steps
+    children:
+      - title: "Create a fresh Laravel project"
+        url: /laravel-with-docker-without-third-party-packages#create-a-fresh-laravel-project
+      - title: "Upgrading"
+        url: /docs/upgrading/
