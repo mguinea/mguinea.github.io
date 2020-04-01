@@ -8,25 +8,30 @@ name: "Marc Guinea"
 repository: mguinea/mguinea.github.io
 title: marcguinea.com
 twitter_username: marcguineacasas
-url: "https://www.marcguinea.com" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://www.marcguinea.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
 
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
 
 remote_theme: "mmistakes/minimal-mistakes@4.19.1"
 
@@ -66,7 +71,9 @@ defaults:
 header:
   teaser: "/assets/images/my-awesome-post-teaser.jpg"
 
-include: ["_pages"]
+include:
+  - _pages
+
 locale: en
 logo: "/assets/images/marc-guinea-header.png"
 minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
