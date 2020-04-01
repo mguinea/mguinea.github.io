@@ -25,5 +25,25 @@ laravel-with-docker-without-third-party-packages:
     children:
       - title: "Create a fresh Laravel project"
         url: /laravel-with-docker-without-third-party-packages#create-a-fresh-laravel-project
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: "Create Docker Compose file"
+        url: /laravel-with-docker-without-third-party-packages#create-docker-compose-file
+      - title: "Create Dockerfile"
+        url: /laravel-with-docker-without-third-party-packages#create-dockerfile
+      - title: "Configure PHP"
+        url: /laravel-with-docker-without-third-party-packages#configure-php
+      - title: "Configure Nginx"
+        url: /laravel-with-docker-without-third-party-packages#configure-nginx
+      - title: "Configure db"
+        url: /laravel-with-docker-without-third-party-packages#configure-db
+      - title: "Configure .env"
+        url: /laravel-with-docker-without-third-party-packages#configure-env
+      - title: "Creating MySQL user"
+        url: /laravel-with-docker-without-third-party-packages#creating-mysql-user
+  - title: Others
+    children:
+    - title: "Containers execution"
+      url: /laravel-with-docker-without-third-party-packages#containers-execution
+    - title: "Summary"
+      url: /laravel-with-docker-without-third-party-packages#summary
+    - title: "FAQ"
+      url: /laravel-with-docker-without-third-party-packages#faq
