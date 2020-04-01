@@ -37,12 +37,12 @@ laravel-with-docker-without-third-party-packages:
         url: /laravel-with-docker-without-third-party-packages#configure-db
       - title: "Configure .env"
         url: /laravel-with-docker-without-third-party-packages#configure-env
+      - title: "Containers execution"
+        url: /laravel-with-docker-without-third-party-packages#containers-execution
       - title: "Creating MySQL user"
         url: /laravel-with-docker-without-third-party-packages#creating-mysql-user
   - title: Others
     children:
-    - title: "Containers execution"
-      url: /laravel-with-docker-without-third-party-packages#containers-execution
     - title: "Summary"
       url: /laravel-with-docker-without-third-party-packages#summary
     - title: "FAQ"

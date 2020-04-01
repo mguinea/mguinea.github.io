@@ -62,6 +62,8 @@ With following content:
 
 TL;DR go to next section [Create Dockerfile](#create-dockerfile)
 
+TODO
+
 ```yml
 version: '3' # This is the version of Docker Compose we will use
 ```
@@ -87,6 +89,8 @@ With following content:
 ##### Detailed explanation
 
 TL;DR go to next section [Configure services](#configure-services)
+
+TODO
 
 ### Configure services
 Now that we have all containers and services properly set, we are going to configure each one using `volumes`
@@ -193,7 +197,104 @@ DB_USERNAME=laravel_app_user
 DB_PASSWORD=password
 ```
 
-### Creating MySQL user
 ### Containers execution
+Once you have all containers defined, you can start them by using:
+
+```bash
+docker-compose up -d
+```
+
+If process has finished and it is running, you can query your running containers by using:
+
+```bash
+docker ps
+```
+
+### Creating MySQL user
+Default MySQL installation just creates a `root` user. For security reasons you must create our own db user.
+
+First, you should enter in db container:
+
+```bash
+docker-compose exec db bash
+```
+
+Once you are in the container, you need to log in as a root admin:
+
+```bash
+# mysql -u root -p
+```
+
+Password is the same as you set during `docker-compose` file.
+
+Now, lets check what are the available databases:
+
+```bash
+mysql> show databases;
+```
+
+```
+Output
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| laravel            |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+```
+
+Now, create new user, grant access to database and flush permissions:
+
+```bash
+mysql> GRANT ALL ON laravel.* TO 'laraveluser'@'%' IDENTIFIED BY 'your_laravel_db_password';
+mysql> FLUSH PRIVILEGES;
+mysql> EXIT;
+```
+
+And close container
+
+```bash
+# exit
+```
+
+Now, there is a new MySQL user account for our project.
+
+It's time to migrate database. Just type:
+
+```bash
+docker-compose exec app php artisan migrate
+```
+
 ### Summary
+
+Docker, Dockercompose and a new fresh Laravel project have been installed.
+
+Following files have been created and configured inside the Laravel project:
+
+```
+.
+├── docker
+│   ├── mysql
+│   │   └── my.cnf
+│   ├── nginx
+│   │   └── conf.d
+│   │       └── app.conf
+│   └── php
+│       └── local.ini
+├── docker-compose.yml
+└── Dockerfile
+```
+
+
+
 ### FAQ
+
+- Q: I have conflicts with container names if I have multiple projects.
+- A: This is because each service in `docker-compose.yml` must have an unique `container_name`
+
+- Q: How can I execute artisan commands?
+- A: You need to point the container, not directly in your machine. Use something like: `docker-compose exec app php artisan config:cache`
