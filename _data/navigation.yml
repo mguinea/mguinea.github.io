@@ -33,8 +33,8 @@ laravel-with-docker-without-third-party-packages:
         url: /laravel-with-docker-without-third-party-packages#configure-php
       - title: "Configure Nginx"
         url: /laravel-with-docker-without-third-party-packages#configure-nginx
-      - title: "Configure db"
-        url: /laravel-with-docker-without-third-party-packages#configure-db
+      - title: "Configure MySQL"
+        url: /laravel-with-docker-without-third-party-packages#configure-mysql
       - title: "Configure .env"
         url: /laravel-with-docker-without-third-party-packages#configure-env
       - title: "Containers execution"

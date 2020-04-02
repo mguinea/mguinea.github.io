@@ -1,7 +1,7 @@
 ---
 categories:
   - Laravel tutorials
-date: 2020-03-31 08:35:08 +0200
+date: 2020-04-02 22:23:08 +0200
 header:
   image: /assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.png
   image_description: "Laravel Docker"
@@ -25,7 +25,7 @@ implementations.
 
 Well, if that is your case, this is your tutorial. I will be very schematic and concise to avoid the typical TL;DR articles.
 
-We are going to create a Laravel application in a LEMP stack through Docker.
+We are going to create a Laravel application in a `LEMP` stack through `Docker` and `Docker Compose`.
 
 ### Requirements
 
@@ -48,7 +48,7 @@ We need 3 services (each one based on its own Docker container):
 - `db` The MySQL database. 
 - `webserver` In our case, the Nginx server.
 
-Create a new file as below in your `project root` folder:
+Create a new file as below in your `{project_root}` folder:
 
 ```bash
 nano docker-compose.yml
@@ -58,25 +58,15 @@ With following content:
 
 {% gist afd280df8d93982582bfff1c66a54edf %}
 
-##### Detailed explanation
-
-TL;DR go to next section [Create Dockerfile](#create-dockerfile)
-
-TODO
-
-```yml
-version: '3' # This is the version of Docker Compose we will use
-```
-
 ### Create Dockerfile
-As you have noticed, the `app` services has no image like `webserver` or `db` services. 
+As you have noticed, the `app` service has no image like `webserver` or `db` services. 
 
 This is because we will use a local Dockerfile in our project. 
 It is useful because the `app` could have special requirements or changes in future and
 having it in our source code make any update easy to apply. But it's not mandatory, you can use any existing Docker image
 in [https://hub.docker.com/](https://hub.docker.com/)
 
-Create a new file without extension as below in your `project root` folder:
+Create a new file without extension as below in your `{project_root}` folder:
 
 ```bash
 nano Dockerfile
@@ -85,12 +75,6 @@ nano Dockerfile
 With following content:
 
 {% gist 1c45bb4f127f343f76aa6be9f8e86c25 %}
-
-##### Detailed explanation
-
-TL;DR go to next section [Configure services](#configure-services)
-
-TODO
 
 ### Configure services
 Now that we have all containers and services properly set, we are going to configure each one using `volumes`
@@ -105,7 +89,7 @@ volumes:
 
 This is expecting a `local.ini` file with php settings. If you don't set anything, defaults will rule it. 
 
-Create a new file as below in your `{project root}/docker/php/` folder:
+Create a new file as below in your `{project_root}/docker/php/` folder:
 
 ```bash
 nano local.ini
@@ -159,7 +143,7 @@ server {
 }
 
 ```
-#### Configure db
+#### Configure MySQL
 Previously we have set a volume in `db` service in `docker-composer.yml` file:
 
 ```yaml
@@ -201,7 +185,7 @@ DB_PASSWORD=password
 Once you have all containers defined, you can start them by using:
 
 ```bash
-docker-compose up -d
+docker-compose up -d --remove-orphans
 ```
 
 If process has finished and it is running, you can query your running containers by using:
@@ -271,7 +255,7 @@ docker-compose exec app php artisan migrate
 
 ### Summary
 
-Docker, Dockercompose and a new fresh Laravel project have been installed.
+Docker, Docker compose and a new fresh Laravel project have been installed.
 
 Following files have been created and configured inside the Laravel project:
 
@@ -289,12 +273,13 @@ Following files have been created and configured inside the Laravel project:
 └── Dockerfile
 ```
 
-
-
 ### FAQ
 
 - Q: I have conflicts with container names if I have multiple projects.
 - A: This is because each service in `docker-compose.yml` must have an unique `container_name`
 
 - Q: How can I execute artisan commands?
-- A: You need to point the container, not directly in your machine. Use something like: `docker-compose exec app php artisan config:cache`
+- A: You need to point the container, not directly in your machine. Go to your `{project_root}` and type (for example): `docker-compose exec app php artisan config:cache`
+
+- Q: Can I use terminal directly?
+- A: Go to your `{project_root}` and type: `docker-compose exec --u user app bash` with this command you will be in the terminal of `app` container.
