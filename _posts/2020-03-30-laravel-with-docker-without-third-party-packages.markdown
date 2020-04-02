@@ -5,7 +5,7 @@ date: 2020-04-02 22:23:08 +0200
 header:
   image: /assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.png
   image_description: "Laravel Docker"
-  og_image: /assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.png
+  og_image: /assets/images/posts/laravel-with-docker-without-third-party-packages/og-laravel-docker.png
 permalink: /laravel-with-docker-without-third-party-packages
 sidebar:
   nav: "laravel-with-docker-without-third-party-packages"
