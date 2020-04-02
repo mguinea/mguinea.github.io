@@ -2,6 +2,7 @@
 categories:
   - Laravel tutorials
 date: 2020-04-02 22:23:08 +0200
+excerpt: "Use Laravel with Docker in a LEMP environment without any third party package tutorial."
 header:
   image: /assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.png
   image_description: "Laravel Docker"
