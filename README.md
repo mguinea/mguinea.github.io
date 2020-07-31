@@ -14,3 +14,8 @@ the gems in your Gemfile
 Just push to master branch.
 
 If you want to refresh site, run `git commit -m 'rebuild pages' --allow-empty && git push`
+
+## References
+
+- https://ouyi.github.io/post/2017/12/23/jekyll-customization.html
+- https://github.com/jekyll/minima
