@@ -1,84 +1,55 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
-# baseurl: "" # the subpath of your site, e.g. /blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Marc Guinea personal website. I'm a Software Architect and DevOps curious. I also enjoy Javascript and pizza!
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Marc Guinea | Software developer
 email: develop.marcguinea@gmail.com
-github_username:  mguinea
-name: "Marc Guinea"
-repository: mguinea/mguinea.github.io
-title: marcguinea.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.marcguinea.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marcguineacasas
-# url: "https://www.marcguinea.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  mguinea
 
 # Build settings
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
 
-remote_theme: "mmistakes/minimal-mistakes@4.19.1"
-
-# Template settings
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "UA-162359657-1"
-    anonymize_ip: false # default
-
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "marcguinea-com"
-
-defaults:
-  # _pages
-  - scope:
-        path: ""
-        type: pages
-    values:
-      layout: single
-      author_profile: true
-
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-header:
-  teaser: "/assets/images/my-awesome-post-teaser.jpg"
-
-include:
-  - _pages
-
-locale: en
-logo: "/assets/images/marc-guinea-header.png"
-minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-search: true
-title_separator: "|"
-
-twitter:
-  username: "@marcguineacasas"
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

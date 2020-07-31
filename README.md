@@ -1,18 +1,16 @@
-# Marc Guinea site
+# marcguinea.com
 
 ## Development
 
-### Run dev mode
+Run `bundle exec jekyll serve` and go to `http://localhost:4000` 
 
-bundle exec jekyll serve
+If you need to use another port, add `--port=XXXX`
+
+Running `bundle update` will rebuild your snapshot from scratch, using only
+the gems in your Gemfile
 
 ## Deployment
 
-### Update site
+Just push to master branch.
 
-git commit -m 'rebuild pages' --allow-empty && git push
-
-## References
-
-https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-https://gist.github.com/lukehedger/3cb6ec65e753d850ccea
+If you want to refresh site, run `git commit -m 'rebuild pages' --allow-empty && git push`

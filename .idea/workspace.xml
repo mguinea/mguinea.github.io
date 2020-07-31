@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9db554c0-1e61-4968-a89f-b3e5173cade9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/authors.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/ui-text.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/masthead.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/archive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/home.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/portfolio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/posts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-03-30-laravel-with-docker-without-third-party-packages.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-04-02-make-composer-scripts-to-use-docker-easily.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/marc-guinea-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/laravel-with-docker-without-third-party-packages/laravel-docker.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/laravel-with-docker-without-third-party-packages/og-laravel-docker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/laravel-with-docker-without-third-party-packages/og-laravel-docker.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/make-composer-scripts-to-use-docker-easily/docker-composer-scripts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/make-composer-scripts-to-use-docker-easily/docker-composer-scripts.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/make-composer-scripts-to-use-docker-easily/og-docker-composer-scripts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/posts/make-composer-scripts-to-use-docker-easily/og-docker-composer-scripts.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/profile.jpeg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZpwSGGW5SwuJsZEgkgCw8k7xjn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old" />
+      <recent name="$PROJECT_DIR$/assets/images/posts/laravel-with-docker-without-third-party-packages" />
+      <recent name="$PROJECT_DIR$/assets/images/posts" />
+      <recent name="$PROJECT_DIR$/_pages" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/../laravel-test-docker" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9db554c0-1e61-4968-a89f-b3e5173cade9" name="Default Changelist" comment="" />
+      <created>1585549341478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585549341478</updated>
+      <workItem from="1585549342993" duration="18793000" />
+      <workItem from="1585635939583" duration="246000" />
+      <workItem from="1585636702511" duration="603000" />
+      <workItem from="1585650048629" duration="8598000" />
+      <workItem from="1585685278116" duration="1406000" />
+      <workItem from="1585720695436" duration="2146000" />
+      <workItem from="1585726784458" duration="8975000" />
+      <workItem from="1585857884158" duration="3631000" />
+      <workItem from="1585894243984" duration="10639000" />
+      <workItem from="1588596417852" duration="915000" />
+      <workItem from="1596227733198" duration="1494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="278" width="416" height="484" key="FileChooserDialogImpl" timestamp="1585894269596">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="743" y="278" width="416" height="484" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1585894269596" />
+  </component>
+</project>
