@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="home">
     <h1 class="font-primary font-extrabold text-5xl">Marc Guinea</h1>
     <h2 class="mb-10 font-primary font-bold text-2xl">Software developer</h2>
@@ -13,9 +12,9 @@ layout: default
     {% endif %}
 
     {%- if posts.size > 0 -%}
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-12">
         {%- for post in posts -%}
-            {% if post.featured %}
+            {% if forloop.index == 1 %}
                 {%- include featured_post.html -%}
             {% else %}
                 {%- include standard_post.html -%}
@@ -23,55 +22,4 @@ layout: default
         {%- endfor -%}
     </div>
     {%- endif %}
-
-<!--
-
-    {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-    {% else %}
-    {% assign posts = site.posts %}
-    {% endif %}
-
-
-    {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-    <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- for post in posts -%}
-        <li>
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
-        </li>
-        {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-    <div class="pager">
-        <ul class="pagination">
-            {%- if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-            {%- else %}
-            <li><div class="pager-edge">•</div></li>
-            {%- endif %}
-            <li><div class="current-page">{{ paginator.page }}</div></li>
-            {%- if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-            {%- else %}
-            <li><div class="pager-edge">•</div></li>
-            {%- endif %}
-        </ul>
-    </div>
-    {%- endif %}
-
-    {%- endif -%}-->
-
 </div>
