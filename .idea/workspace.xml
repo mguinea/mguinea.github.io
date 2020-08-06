@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9db554c0-1e61-4968-a89f-b3e5173cade9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/featured_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/featured_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/standard_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/standard_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-07-31-welcome-to-jekyll.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-08-01-welcome-to-jekyll-2.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-08-01-welcome-to-jekyll-3.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-08-01-welcome-to-jekyll-4.markdown" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +69,7 @@
       <workItem from="1596313197820" duration="2548000" />
       <workItem from="1596397489037" duration="153000" />
       <workItem from="1596486396169" duration="2648000" />
-      <workItem from="1596738670486" duration="3035000" />
+      <workItem from="1596738670486" duration="4547000" />
     </task>
     <servers />
   </component>
