@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9db554c0-1e61-4968-a89f-b3e5173cade9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-07-31-welcome-to-jekyll.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-07-31-welcome-to-jekyll.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -40,6 +45,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/../laravel-test-docker" />
     </key>
   </component>
@@ -63,7 +69,10 @@
       <workItem from="1585857884158" duration="3631000" />
       <workItem from="1585894243984" duration="10639000" />
       <workItem from="1588596417852" duration="915000" />
-      <workItem from="1596227733198" duration="1833000" />
+      <workItem from="1596227733198" duration="3459000" />
+      <workItem from="1596313197820" duration="2548000" />
+      <workItem from="1596397489037" duration="153000" />
+      <workItem from="1596486396169" duration="2648000" />
     </task>
     <servers />
   </component>
@@ -71,9 +80,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="278" width="416" height="484" key="FileChooserDialogImpl" timestamp="1585894269596">
+    <state x="619" y="320" width="671" height="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596313279269">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="743" y="278" width="416" height="484" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1585894269596" />
+    <state x="619" y="320" width="671" height="399" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.988/1920.0.1920.1080@0.27.1920.988" timestamp="1596313279269" />
+    <state x="743" y="278" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596397615290">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="743" y="278" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.988/1920.0.1920.1080@0.27.1920.988" timestamp="1596397615290" />
   </component>
 </project>

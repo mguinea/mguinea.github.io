@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+    {%- include head.html -%}
+    <body class="bg-gray-500">
+        <main class="container mx-auto p-10 bg-white shadow-2xl" aria-label="Content">
+            {{ content }}
+        </main>
+    </body>
+</html>

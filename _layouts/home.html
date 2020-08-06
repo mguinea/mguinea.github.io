@@ -3,12 +3,28 @@ layout: default
 ---
 
 <div class="home">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+    <h1 class="font-primary font-extrabold text-5xl">Marc Guinea</h1>
+    <h2 class="mb-10 font-primary font-bold text-2xl">Software developer</h2>
 
-    {{ content }}
+    {% if site.paginate %}
+        {% assign posts = paginator.posts %}
+    {% else %}
+        {% assign posts = site.posts %}
+    {% endif %}
 
+    {%- if posts.size > 0 -%}
+    <div class="grid grid-cols-3 gap-4">
+        {%- for post in posts -%}
+            {% if post.featured %}
+                {%- include featured_post.html -%}
+            {% else %}
+                {%- include standard_post.html -%}
+            {% endif %}
+        {%- endfor -%}
+    </div>
+    {%- endif %}
+
+<!--
 
     {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -56,6 +72,6 @@ layout: default
     </div>
     {%- endif %}
 
-    {%- endif -%}
+    {%- endif -%}-->
 
 </div>
