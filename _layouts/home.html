@@ -2,9 +2,6 @@
 layout: default
 ---
 <div class="home">
-    <h1 class="font-primary font-extrabold text-5xl">Marc Guinea</h1>
-    <h2 class="mb-10 font-primary font-bold text-2xl">Software developer</h2>
-
     {% if site.paginate %}
         {% assign posts = paginator.posts %}
     {% else %}
@@ -14,11 +11,7 @@ layout: default
     {%- if posts.size > 0 -%}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {%- for post in posts -%}
-            {% if forloop.index == 1 %}
-                {%- include featured_post.html -%}
-            {% else %}
-                {%- include standard_post.html -%}
-            {% endif %}
+            {%- include post.html -%}
         {%- endfor -%}
     </div>
     {%- endif %}

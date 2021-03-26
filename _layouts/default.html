@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
     {%- include head.html -%}
-    <body class="bg-gray-500">
-        <main class="container mx-auto p-16 bg-white shadow-2xl" aria-label="Content">
+    <body class="bg-white">
+        <header class="container mx-auto" aria-label="Header">
+            <h1 class="font-primary font-extrabold text-2xl">Marc Guinea</h1>
+        </header>
+
+        <main class="container mx-auto" aria-label="Content">
             {{ content }}
         </main>
     </body>
