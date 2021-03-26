@@ -1,84 +1,65 @@
 # Site settings
-# baseurl: "" # the subpath of your site, e.g. /blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Marc Guinea personal website. I'm a Software Architect and DevOps curious. I also enjoy Javascript and pizza!
-email: develop.marcguinea@gmail.com
-github_username:  mguinea
-name: "Marc Guinea"
-repository: mguinea/mguinea.github.io
-title: marcguinea.com
-twitter_username: marcguineacasas
-# url: "https://www.marcguinea.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: Marc Guinea
+email: marcguinea@gmail.com
+url: https://marcguinea.com
+description: "My name is Marc Guinea and I am a php backend software developer. I love software architecture. Solid, Hexagonal, Design Patterns, DDD, TDD and Clean Code are my friends!"
+keywords: "developer,php,symfony,laravel,ddd,hexagonal,tdd,solid,best-practices"
+skills: "Software Developer"
+meta_author: Guinea Marc
+
+# Google webmaster tools
+# google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+# bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+# disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 0984e3 #80B3FF
+  primary-rgb: "9,132,227" #"128,179,255"
+  secondary: 034B82 #FD6E8A
+  secondary-dark: 0463AC #A2122F
+
+# Footer settings
+footer:
+  copyright: Marc Guinea
+  location: Barcelona
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/marcguineacasas
+  - title: github
+    url: https://github.com/mguinea
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Sant Quirze del Vallès
+  - line: 08192
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
+markdown: kramdown
+permalink: pretty
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
-
-remote_theme: "mmistakes/minimal-mistakes@4.19.1"
-
-# Template settings
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "UA-162359657-1"
-    anonymize_ip: false # default
-
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "marcguinea-com"
-
+#for posts
 defaults:
-  # _pages
-  - scope:
-        path: ""
-        type: pages
-    values:
-      layout: single
-      author_profile: true
-
-  # _posts
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-header:
-  teaser: "/assets/images/my-awesome-post-teaser.jpg"
-
-include:
-  - _pages
-
-locale: en
-logo: "/assets/images/marc-guinea-header.png"
-minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-search: true
-title_separator: "|"
-
-twitter:
-  username: "@marcguineacasas"
+      permalink: ""
