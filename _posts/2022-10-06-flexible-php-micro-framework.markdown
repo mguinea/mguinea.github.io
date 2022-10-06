@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2022-10-06
-img: https://raw.githubusercontent.com/mguinea/flexible/main/flexible-logo.png
+img: flexible-logo.png
 border: true
 title: Flexible PHP micro framework
 alt: Flexible PHP micro framework
