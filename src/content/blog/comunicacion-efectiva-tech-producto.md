@@ -1,7 +1,7 @@
 ---
 title: 'Cómo mejorar la comunicación entre técnicos y responsables de producto'
 description: 'Descubre cómo mejorar la comunicación entre desarrolladores y responsables de producto. Claves prácticas desde la experiencia de un ingeniero de software con enfoque a valor y producto.'
-pubDate: 'Jul 08 2022'
+pubDate: 'Jun 20 2025'
 heroImage: '../../assets/pexels-nubikini-981588.webp'
 ---
 
