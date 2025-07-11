@@ -1,7 +1,7 @@
 ---
 title: 'Cómo integrar una API externa'
 description: 'Cómo integrar una API externa siguiendo buenas prácticas.'
-pubDate: 'Ago 10 2021'
+pubDate: 'Aug 10 2021'
 heroImage: '../../assets/integration-external-api.webp'
 ---
 
